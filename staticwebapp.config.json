@@ -28,7 +28,7 @@
     },
     {
       "route": "/api/AddStandardsDeploy",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "authenticated"]
     },
     {
       "route": "/LogoutRedirect",
@@ -40,31 +40,31 @@
     },
     {
       "route": "/api/RemoveStandard",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "authenticated"]
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "authenticated"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "authenticated"]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "editor", "readonly"]
+      "allowedRoles": ["admin", "editor", "readonly", "authenticated"]
     },
     {
       "route": "/api/ExecExcludeTenant",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "authenticated"]
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "authenticated"]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "editor"]
+      "allowedRoles": ["admin", "editor", "authenticated"]
     },
     {
       "route": "/cipp/*",
