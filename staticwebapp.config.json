@@ -107,5 +107,16 @@
   },
   "mimeTypes": {
     ".json": "text/json"
+  },
+    "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/8fad3a86-17bd-480c-a5f0-f2fa437555d9/v2.0",
+          "clientIdSettingName": "AZURE_CLIENT_ID",
+          "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+        }
+      }
+    }
   }
 }
