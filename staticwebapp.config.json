@@ -68,11 +68,11 @@
     },
     {
       "route": "/cipp/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "authenticated"]
     },
     {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin"]
+      "allowedRoles": ["admin", "authenticated"]
     },
     {
       "route": "/",
@@ -84,7 +84,7 @@
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader"]
+      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated"]
     }
   ],
   "navigationFallback": {
