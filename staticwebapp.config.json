@@ -28,7 +28,7 @@
     },
     {
       "route": "/api/AddStandardsDeploy",
-      "allowedRoles": ["admin", "authenticated"]
+      "allowedRoles": ["admin", "authenticated", "anonymous"]
     },
     {
       "route": "/LogoutRedirect",
@@ -40,39 +40,39 @@
     },
     {
       "route": "/api/RemoveStandard",
-      "allowedRoles": ["admin", "authenticated"]
+      "allowedRoles": ["admin", "authenticated", "anonymous"]
     },
     {
       "route": "/api/add*",
-      "allowedRoles": ["admin", "editor", "authenticated"]
+      "allowedRoles": ["admin", "editor", "authenticated", "anonymous"]
     },
     {
       "route": "/api/edit*",
-      "allowedRoles": ["admin", "editor", "authenticated"]
+      "allowedRoles": ["admin", "editor", "authenticated", "anonymous"]
     },
     {
       "route": "/api/ExecSendPush",
-      "allowedRoles": ["admin", "editor", "readonly", "authenticated"]
+      "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
     },
     {
       "route": "/api/ExecExcludeTenant",
-      "allowedRoles": ["admin", "authenticated"]
+      "allowedRoles": ["admin", "authenticated", "anonymous"]
     },
     {
       "route": "/api/Exec*",
-      "allowedRoles": ["admin", "editor", "authenticated"]
+      "allowedRoles": ["admin", "editor", "authenticated", "anonymous"]
     },
     {
       "route": "/api/Remove*",
-      "allowedRoles": ["admin", "editor", "authenticated"]
+      "allowedRoles": ["admin", "editor", "authenticated", "anonymous"]
     },
     {
       "route": "/cipp/*",
-      "allowedRoles": ["admin", "authenticated"]
+      "allowedRoles": ["admin", "authenticated", "anonymous"]
     },
     {
       "route": "/tenant/standards/*",
-      "allowedRoles": ["admin", "authenticated"]
+      "allowedRoles": ["admin", "authenticated", "anonymous"]
     },
     {
       "route": "/",
@@ -84,7 +84,7 @@
     },
     {
       "route": "*",
-      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated"]
+      "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
     }
   ],
   "navigationFallback": {
