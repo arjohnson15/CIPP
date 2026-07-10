@@ -13,6 +13,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
+      # Overlay REDiTECH branding onto the source tree before the build.
+      # Branding assets live in the fork-only branding/ dir (upstream has no
+      # such folder, so pull[bot] syncs never touch them). This step re-applies
+      # them on every deploy, so upstream changes to logo.js are harmless.
+      - name: Apply REDiTECH branding
+        run: |
+          if [ -f branding/logo.js ]; then
+            cp branding/logo.js src/components/logo.js
+            echo "Applied branding/logo.js -> src/components/logo.js"
+          else
+            echo "branding/logo.js not found; skipping (deploying stock logo)"
+          fi
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
